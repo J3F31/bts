@@ -1,6 +1,6 @@
 <template>
 <main>
-  <div id="loader">
+  <!-- <div id="loader">
     <p>Loading</p>
 
     <div id="loadingContainer">
@@ -8,29 +8,29 @@
     </div>
 
     <p id="percentLoaded">25%</p>
-  </div>
+  </div> -->
   <canvas></canvas>
 </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { CustomLoading } from '@/BabylonExamples/CustomLoading';
+import { StandardMaterials } from '@/BabylonExamples/StandardMaterials';
 
 export default defineComponent({
   name: 'BabylonExamples',
   mounted() {
     const canvas = document.querySelector("canvas")!;
-    const loadingBar = document.getElementById("loadingBar")!;
-    const percentLoaded = document.getElementById("percentLoaded")!;
-    const loader = document.getElementById("loader")!;
+    // const loadingBar = document.getElementById("loadingBar")!;
+    // const percentLoaded = document.getElementById("percentLoaded")!;
+    // const loader = document.getElementById("loader")!;
 
-    new CustomLoading(canvas, loadingBar, percentLoaded, loader);
+    // new CustomLoading(canvas, loadingBar, percentLoaded, loader);
+    new StandardMaterials(canvas);
   }
 });
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 main {
   display: flex;
@@ -48,5 +48,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+canvas {
+  height: 80dvh;
 }
 </style>
