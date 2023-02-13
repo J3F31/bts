@@ -8,11 +8,14 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@j3f3/jero-test": "^1.0.10",
+    "@j3f3/jero-test": "^1.0.14",
+    "babylonjs": "^5.46.0",
+    "babylonjs-inspector": "^5.46.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
-    "@babylonjs/core": "^5.24.0",
+    "@babylonjs/core": "^5.46.0",
+    "@babylonjs/inspector": "^5.46.0",
     "@babylonjs/loaders": "^5.24.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",

@@ -1,4 +1,4 @@
-import { Scene, Engine, FreeCamera, Vector3, HemisphericLight, MeshBuilder, StandardMaterial, Texture, Color3 } from "@babylonjs/core";
+import { Scene, Engine, FreeCamera, Vector3, HemisphericLight, MeshBuilder, StandardMaterial, Texture, Color3 } from "babylonjs";
 import jero from '@j3f3/jero-test'
 
 export class StandardMaterials {
@@ -32,8 +32,8 @@ export class StandardMaterials {
 
     ground.material = this.CreateGroundMaterial();
     ball.material = this.CreateBallMaterial();
-
-    jero.TestMesh('name', 'sphere', 1, new Color3(1 ,1, 1), [1, 1, 1], scene);
+    
+    // jero.TestMesh('name', 'cube', 3, this.CreateBallMaterial(), new Vector3(1, 1, 1), scene);
 
     return scene;
   }
@@ -64,7 +64,7 @@ export class StandardMaterials {
       tex.uScale = uvScale;
       tex.vScale = uvScale;
     })
-
+    
     return groundMat;
   }
 

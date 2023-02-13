@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { StandardMaterials } from '@/BabylonExamples/StandardMaterials';
+import { PBR } from '@/BabylonExamples/PBR';
 
 export default defineComponent({
   name: 'BabylonExamples',
@@ -26,7 +26,7 @@ export default defineComponent({
     // const loader = document.getElementById("loader")!;
 
     // new CustomLoading(canvas, loadingBar, percentLoaded, loader);
-    new StandardMaterials(canvas);
+    new PBR(canvas);
   }
 });
 </script>
@@ -51,6 +51,10 @@ main {
 }
 
 canvas {
-  height: 80dvh;
+  height: 100dvh;
+}
+#embed-host {
+  z-index: 1000 !important;
+  position: absolute !important;
 }
 </style>
