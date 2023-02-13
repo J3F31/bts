@@ -53,8 +53,5 @@ main {
 canvas {
   height: 100dvh;
 }
-#embed-host {
-  z-index: 1000 !important;
-  position: absolute !important;
-}
+
 </style>
